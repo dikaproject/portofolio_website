@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS untuk link ke bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS Link untuk bisa ngelink atau menyambungkan coding ini dengan css di beda folder-->
+    <link rel="stylesheet" href="/asset/css/style.css">
+
+    <!-- AOS CSS adalah library yang mengatur animate.css kepanjangannya yaitu animated on scroll-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <!-- JS Link untuk ngelink ke file js / java script yang saya buat dan juga bisa digunkaan untuk library Jquery dll-->
+    <script src="/asset/js/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Icons berguna untuk ngeset icons dari website lain contohnya dari box icons dan font awesome -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts icons untuk link ke icons tetapi dari google fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <!-- Google font untuk link ke google font agar bisa menggunakan font dari google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portofolio Dika</title>
+</head>
+
+<body>
+    <!-- Buat Navigation Bar website atau dia biasanya ada di paling atas untuk memudahkan user yang mengakses website ini -->
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DikaProject</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bx bx-menu" style="color: white;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#skill">Skill</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#contact-us">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="follow">
+                    <p>Follow</p>
+                    <a href=""><i class='bx bxl-github mx-'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt mx-'></i></a>
+                    <a href=""><i class='bx bxl-twitter mx-'></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Page Section untuk tampilan home website ini yang mendeskripsikan saya secara singkat -->
+    <section id="home" class="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-6 home-tagline">
+                    <div class="home-text" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="50">
+                        <h1>Rasya Dika Pratama | Developer Indonesia</h1>
+                        <p class="animate-text">
+                            <span>Front End Developer</span>
+                            <span>Back End Developer</span>
+                            <span>Desainer UI/UX</span>
+                            <span>Server Developer</span>
+                        </p>
+                        <p>Saya Rasya Dika Pratama, Seseorang siswa yang suka dunia digital. mempunyai komunitas dan
+                            gabung komunitas sebagai role admin. saya mampu di bidang front end, back end dan management
+                            server. </p>
+
+                        <button type="button" class="btn btn-primary btn-lg">Download CV</button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="50">
+                    <img src="/asset/img/profile.png" alt="Image" class="img-fluid custom-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Page End Section akhir dari home section di atas -->
+
+    <!-- About Section tampilan about me / tentang saya untuk mendeskripsikan secara rinci tentang saya di website ini -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <div class="about-img" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="50">
+                        <img src="/asset/img/profile.png" alt="" class="img-fluid custom-image">
+                    </div>
+                </div>
+                <div class="col-md ">
+                    <div class="about-text" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="50">
+                        <h2>Tentang Saya</h2>
+                        <p>Hallo, perkenalkan nama saya Rasya Dika Pratama. Saya adalah seorang siswa yang suka dunia digital.
+                            sekarang saya sedang menempuh pembelajaran di SMK Telkom Purwokerto, salah satu sekolah IT di Purwokerto
+                        yang bagus. saya ingin mengembangkan skill saya lebih lagi disana. saya belajar coding dan server development secara
+                    otodidak karena terbatasnya biaya untuk mengikuti course atau bootcamp. </p>
+                        <div class="card card-about" style="background-color: #2C74B3;">
+                            <div class="card-about-body">
+                                <div class="text-section">
+                                    <i class='bx bxs-calendar card-text'></i>
+                                    <p class="card-text">Sudah Di Dalam Dunia Coding Selama 2 Tahun.</p>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-about" style="background-color: #2C74B3;">
+                            <div class="card-about-body">
+                                <div class="text-section">
+                                    <i class='bx bxs-cart-download card-text'>
+                                        <p class="card-text">07+ Project Selesai + Freelance.</p>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-about" style="background-color: #2C74B3;">
+                            <div class="card-about-body">
+                                <div class="text-section">
+                                    <i class='bx bxs-stopwatch card-text'>
+                                        <p class="card-text">02 Project Sedang Di Develop Untuk Di Rilis.</p>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section akhir dari tampilan about / tentang saya -->
+
+    <!-- service Section tampilan ini ku buat untuk menampilkan jasa yang saya tawarkan untuk bisnis freelance -->
+    <section id="service" class="service section-padding">
+        <div class="container-fluid">
+            <div class="animate" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="50">
+                <h1 class="services-text text-center text-white">Jasa Saya</h1>
+                <p class="paragraf-services text-center text-white mx-auto">Jasa yang saya tawarkan dalam dunia digital.
+                </p>
+                <hr class="mx-auto mb-5 w-25">
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="/asset/img/server hosting.jpeg" alt="" class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="text-center">Server Hosting Server Indonesia</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                saya menjual jasa hosting server untuk lokasi asia bisa indoneisa, singapore , malaysia dll. server yang saya gunakan
+                                yaitu dengan suatu website hosting yang ada di Indonesia. jasa ini lebih ke setting servernya agar aman dari malware atau serangan DDos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="/asset/img/cpanel.jpg" alt="" class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="text-center">Jasa Install C-Panel Server</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Saya menjual jasa install C-panel server untuk para developer pemula yang ingin hosting webnya dengan biaya yang murah.
+                                kerena berbasis C-panel pembeli jasa ini di haruskan paham dengan C-panel agar tidak bingung saat C-panel sudah bisa di gunakan
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="/asset/img/jasa_pembuatan.jpeg" alt="" class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="text-center">Jasa Pembuatan Website</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Saya menjual jasa pembuatan website untuk para umkm atau bisnis lainnya yang ingin promosi via website.
+                                bahasa permograman yang saya pakai untuk websitenya sudah pasti kerangkanya yaitu HTML dan CSS. bahasanya
+                                yaitu JavaScript dan PHP.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3 m-auto">
+                    <div class="card shadow">
+                        <img src="/asset/img/minecraft-server.png" alt="" class="card-img-top mx-auto">
+                        <div class="card-body">
+                            <h3 class="text-center">Jasa Setup Minecraft Server</h3>
+                            <hr class="mx-auto w-75">
+                            <p>
+                                Saya menjual jasa setup / setting server minecraft. bagi yang ingin membuat server sendiri untuk komunitas
+                                maupu hanya mabar dengan teman bisa di sini. akan di berikan penjelasan full serta tutorial cara untuk
+                                menyalakan server minecraftnya dan lain lain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service End akhir dari tampilan service / jasa -->
+
+    <!-- Skill Start page untuk tampilan skill saya yang memuat kemampuan coding saya saya bisa sudah sampai mana -->
+    <div id="skill" class="skills_section text-white">
+        <div class="skills_head">
+            <h2><span>Kemampuan</span> Saya</h2>
+            <p>Kemampuan atau skill yang saya punya selama 2 tahun</p>
+        </div>
+
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>70%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Python</p>
+                    <P>30%</P>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>20%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>React js</p>
+                    <P>05%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Node js</p>
+                    <P>20%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Laravel</p>
+                    <P>45%</P>
+                </div>
+                <div class="bar">
+                    <span class="laravel"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Mongo DB</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="mongo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+        <div class="container-fluid">
+            <div class="container" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="50">
+                <div class="title-contact">
+                    <h1 class="text-center mb-5 p-3 fw-bold">Contact Us</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 shadow rounded p-5">
+                        <div class="row">
+                            <div class="col mb-3">
+                                <label for="" class="form-label"> First Name</label>
+                                <input type="text" class="form-control" placeholder="Masukan Nama Depan">
+                            </div>
+                            <div class="col mb-3">
+                                <label for="" class="form-label"> Last Name</label>
+                                <input type="text" class="form-control" placeholder="Masukan Nama Belakang">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Email</label>
+                            <input type="text" class="form-control" placeholder="Masukan Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" placeholder="Masukan Nomer Hp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Messeage</label>
+                            <textarea class="form-control" placeholder="Masukan Pesan kalian Disini"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg">Kirim Pesan</button>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="ml-5">
+                            <iframe class="ratio ratio-16x9"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.725052777225!2d109.37825921095947!3d-7.712623176375251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6537d1169a0801%3A0x3ac07a4105d5b273!2sDk%20mandiri%20seafood!5e0!3m2!1sid!2sid!4v1692583279878!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat bot page -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Halo Zephyr Chatbot disini 👋<br>Ada yang bisa saya bantu hari ini?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+        </div>
+    </div>
+    <!-- End chat bot page -->
+
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; <span>DikaProject</span> Portofolio website 2023</small>
+        </div>
+      </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</html>
