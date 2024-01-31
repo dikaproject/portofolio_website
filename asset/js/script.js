@@ -37,7 +37,12 @@ const generateResponse = (chatElement) => {
         messageElement.textContent = data.choices[0].message.content.trim();
     }).catch(() => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Opps, Fitur sedang tahap pengembangan.";
+        messageElement.textContent = "Opps, Fitur sedang tahap pengembangan. Untuk lebih lanjut silahkan hubungi admin.";
+        const adminWhatsAppLink = "https://wa.me/6281227848422"; // Replace with the admin's WhatsApp number
+        const adminContactLink = document.createElement("a");
+        adminContactLink.href = adminWhatsAppLink;
+        adminContactLink.textContent = "Hubungi Admin";
+        chatbox.appendChild(adminContactLink);
     }).finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 }
 
