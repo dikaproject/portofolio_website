@@ -79,6 +79,48 @@
         </div>
     </nav>
 
+    <!-- Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Portofolio Saya</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ini adalah beberapa link portofolio saya:</p>
+                    <ul>
+                        <li><a href="https://github.com/dikaproject/my-portofolio">First Project Portofolio simple</a></li>
+                        <br>
+                        <li><a href="https://github.com/dikaproject/project-portofolio-2">Landing Page Portofolio simple</a></li> 
+                        <br>
+                        <li><a href="https://github.com/dikaproject/diagnosa-penyakit_kucing">Project Website Diagnosis Penyakit Kucing With Native PHP</a> <br>
+                        <a href="https://diagnosis.zephyr-id.tech/home"> Live Demo Diagnosis Penyakit Kucing</a></li>
+                        <br>
+                        <li><a href="https://github.com/dikaproject/project-laravel">Project Laravel Auth – Auth with BootstrapUI </a></li> 
+                        <br>
+                        <li><a href="https://github.com/dikaproject/quiz-with-js">Website Quiz Simple with JS</a> <br>
+                            <a href="https://quiz.zephyr-id.tech">Demo Website Quiz</a>
+                        </li> 
+                        <br>
+                        <li><a href="https://github.com/dikaproject/kalkulator-sederhana">Kalkulator Sederhana with JS</a></li> 
+                        <br>
+                        <li><a href="https://github.com/dikaproject/lomba-invention">Project Website Lomba Invention 2023 </a></li> 
+                        <br>
+                        <li><a href="https://github.com/dikaproject/portofolio_website">Project Portofolio Website | Website Yang Sekarang Ini.</a>
+                        <a href="https://portofolio.zephyr-id.tech">Live Demo Website Portofolio</a></li>
+                        <br>
+                        <li><a href="https://github.com/dikaproject/games-taptap-android">Games Tap Tap with Kotlin</a></li>
+                        <!-- Add more portfolio links here -->
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Home Page Section untuk tampilan home website ini yang mendeskripsikan saya secara singkat -->
     <section id="home" class="home">
@@ -97,8 +139,12 @@
                             gabung komunitas sebagai role admin. saya mampu di bidang front end, back end dan management
                             server. </p>
 
-                        <button type="button" class="btn btn-primary btn-lg">Download CV</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#portfolioModal">
+                            Tampilkan Seluruh Portofolio
+                        </button>
                     </div>
+
+                    
                 </div>
                 <div class="col-md-6 text-center mt-4 mt-md-0" data-aos="fade-left" data-aos-duration="3000"
                     data-aos-delay="50">
